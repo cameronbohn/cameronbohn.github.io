@@ -1,10 +1,13 @@
-$footer-background-color: #12B6FF!default;
+$footer-background-color: antiquewhite!default;
 $footer-color: false !default;
 $footer-padding: 3rem 1.5rem 6rem !default;
 
 .footer {
   background-color: $footer-background-color;
   padding: $footer-padding;
+  a {
+    color: #15b2c8;
+  }
 
   @if $footer-color {
     color: $footer-color;

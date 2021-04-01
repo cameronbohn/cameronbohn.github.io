@@ -1,9 +1,9 @@
 $backgroundColor: #ffffff;
-$bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyColor: #333;
+$bodyFont: 'Balsamiq Sans', cursive;
 
 body {
-  background: $backgroundColor;
+  background: #fffaf3;
   color: $bodyColor;
   font-family: $bodyFont;
 }
