@@ -709,6 +709,9 @@ div.column.is-8:first-child {
 .article-body {
   line-height: 1.4;
   margin: 0 6rem;
+  @media(max-width: 960px) {
+    margin: 0 10px;
+  }
 }
 .promo-block .container {
   margin: 1rem 5rem;
