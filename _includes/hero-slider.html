@@ -1,0 +1,37 @@
+<div class="image-gallery is-relative">
+  <!-- <h2 class="title is-3 is-size-4-mobile has-text-white has-text-centered is-family-sans-serif"><em>Crafted Eve to Peak.</em></h2> -->
+  <div class="image-slider">
+    {% for image in site.data.hero_slider.images %}
+    <div class="slide">
+      <img class="image is-fullwidth parallax" src="{{ image }}" />
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script>
+  var slider = tns({
+    arrowKeys: true,
+    container: '.image-slider',
+    items: 1,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: false,
+    mode: 'gallery',
+    controls: false,
+    speed: 1100,
+    animateIn: "jello",
+    animateOut: "rollOut",
+    nav: false,
+    autoplayButtonOutput: false
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script>
+var image = document.getElementsByClassName('parallax');
+new simpleParallax(image, {
+	orientation: 'up',
+  scale: 1.4
+});
+</script>
