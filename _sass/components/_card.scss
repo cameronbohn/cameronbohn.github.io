@@ -61,6 +61,9 @@ $card-media-margin: $block-spacing !default;
 .card-content {
   background-color: $card-content-background-color;
   padding: $card-content-padding;
+  @media (max-width: $desktop) {
+    padding: 1.5rem;
+  }
 }
 
 .card-footer {
