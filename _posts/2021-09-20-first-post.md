@@ -2,6 +2,7 @@
 layout: post
 title:  "My First Post"
 image: "/assets/images/image2.jpg"
+category: "travels"
 ---
 **Hello world**, this is my first Jekyll blog post.
 

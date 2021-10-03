@@ -11,7 +11,7 @@ $navbar-item-color: #222 !default;
 $navbar-item-hover-color: #222!default;
 $navbar-item-hover-background-color: #de9e62 !default;
 $navbar-item-active-color: $scheme-invert !default;
-$navbar-item-active-background-color: transparent !default;
+$navbar-item-active-background-color: #de9e62 !default;
 $navbar-item-img-max-height: 1.75rem !default;
 
 $navbar-burger-color: $navbar-item-color !default;
@@ -711,6 +711,12 @@ div.column.is-8:first-child {
   margin: 0 6rem;
   @media(max-width: 960px) {
     margin: 0 10px;
+  }
+  &.post {
+  margin: 2.8rem 0;
+    @media(max-width: 960px) {
+      margin: 0 10px;
+    }
   }
 }
 .promo-block .container {
