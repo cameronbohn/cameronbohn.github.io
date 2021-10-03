@@ -1,6 +1,6 @@
 $navbar-background-color: $scheme-main !default;
-$navbar-box-shadow-size: 0 2px 0 0 !default;
-$navbar-box-shadow-color: $background !default;
+$navbar-box-shadow-size: 0 4px 0 0 !default;
+$navbar-box-shadow-color: #15b2c8 !default;
 $navbar-height: 3.25rem !default;
 $navbar-padding-vertical: 1rem !default;
 $navbar-padding-horizontal: 2rem !default;
@@ -250,6 +250,7 @@ a.navbar-item,
 
   img {
     max-height: $navbar-item-img-max-height;
+    transform: scale(1.83);
   }
 
   &.has-dropdown {
