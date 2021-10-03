@@ -5,8 +5,9 @@ $footer-padding: 3rem 1.5rem 6rem !default;
 .footer {
   background-color: $footer-background-color;
   padding: $footer-padding;
+  border-top: 3px solid #15b2c8;
   a {
-    color: #15b2c8;
+    color: #222;
   }
 
   @if $footer-color {
