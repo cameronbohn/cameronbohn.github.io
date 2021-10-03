@@ -7,25 +7,65 @@ description: "hello"
 <div class="container">
   <!-- START ARTICLE FEED -->
   <section class="articles">
-    <div class="column is-8 is-offset-2">
+    <div class="columns margin-center">
+    <div class="column is-9 margin-center">
       <!-- START ARTICLE -->
       <div class="card article">
         <div class="card-content">
           <div class="media">
             <div class="media-content has-text-centered">
-              <h1 class="title">Welcome To Backroads and Bourbon</h1>
+              <h1 class="title is-2">Welcome To Backroads and Bourbon</h1>
             </div>
           </div>
-          <div class="content article-body">
-            <p>Non arcu risus quis varius quam quisque. Dictum varius duis at consectetur lorem. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. </p>
+          <div class="large content">
             <p>Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Accumsan lacus vel facilisis volutpat. Non sodales neque sodales ut etiam.
               Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.</p>
           </div>
-          <section class="section is-small">
-            <a class="buttons is-primary is-centered" href="/blog/"><span class="button is-primary is-light is-centerd">View Gallery</span></a>
-          </section>
+          <div class="mt-6">
+            <div class="columns is-vcentered">
+              <div class="column is-3 margin-center has-text-centered">
+                <img class="box" src="https://placedog.net/400/400?random" alt="">
+              </div>
+              <div class="column">
+                <p class="title is-4">Photography</p>
+                <p class="subtitle is-5 has-text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="subtitle is-5 has-text-grey">
+                  <a href="https://mclaneconstruction.com/">View More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="columns is-vcentered">
+              <div class="column is-3 margin-center has-text-centered">
+                <img class="box" src="https://unsplash.it/400/400/" alt="">
+              </div>
+              <div class="column">
+                <p class="title is-4">Travels</p>
+                <p class="subtitle is-5 has-text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="subtitle is-5 has-text-grey">
+                  <a href="/blog/">View More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="columns is-vcentered">
+              <div class="column is-3 margin-center has-text-centered">
+                <img class="box" src="https://placedog.net/400/400?random" alt="">
+              </div>
+              <div class="column">
+                <p class="title is-4">Goods</p>
+                <p class="subtitle is-5 has-text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="subtitle is-5 has-text-grey">
+                  <a href="/blog/">View More</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 </div>
@@ -34,19 +74,18 @@ description: "hello"
     <h2 class="title is-2">Latest Photography</h2>
   </div> -->
   <div class="container" id="macy-container">
-    <h2 class="title is-2">Photographs</h2>
+    <h2 class="title is-2">Latest from Instagram</h2>
     <img class="box" src="https://unsplash.it/557/387/">
     <img class="box" src="https://unsplash.it/602/660/" alt="">
     <img class="box" src="https://unsplash.it/660/646/" alt="">
-    <img class="box" src="https://placedog.net/1280/960?random" alt=""
-    <img class="box" src="https://placedog.net/480/480?random" alt="">
+    <img class="box" src="https://placedog.net/1280/960?random" alt="" <img class="box" src="https://placedog.net/480/480?random" alt="">
     <img class="box" src="https://unsplash.it/660/646/" alt="">
     <img class="box" src="https://unsplash.it/602/660/" alt="">
     <img class="box" src="https://placedog.net/480/480?random" alt="">
   </div>
   <!-- <div class="buttons is-centered"><a class="button is-primary" href="#">View more</a></div> -->
 </section>
-<section class="section">
+<!-- <section class="section">
   <div class="container py-4">
     <h2 class="title has-text-centered mb-6">Distilleries Visited</h2>
     <div class="columns is-multiline mb-6">
@@ -95,18 +134,18 @@ description: "hello"
     <div class="buttons is-pulled-right"><a class="button is-primary" href="#">Read more</a></div>
     </section>
   </div>
-</section>
+</section> -->
 <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 <script>
-var macy = Macy({
-  container: '#macy-container',
-  trueOrder: false,
-  waitForImages: false,
-  margin: 18,
-  columns: 3,
-  breakAt: {
+  var macy = Macy({
+    container: '#macy-container',
+    trueOrder: false,
+    waitForImages: false,
+    margin: 18,
+    columns: 3,
+    breakAt: {
       520: 2,
       400: 1
-  }
-});
+    }
+  });
 </script>
