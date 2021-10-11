@@ -103,6 +103,9 @@ hr {
   display: block;
   height: $hr-height;
   margin: $hr-margin;
+  &.dark {
+    background-color: #4a2a15;
+  }
 }
 
 img {
