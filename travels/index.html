@@ -3,12 +3,28 @@ layout: default
 title: "Blog"
 description: "hello"
 ---
+<section class="section">
 <div class="container">
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  {% for post in site.posts %}
+  <div class="columns">
+    <div class="column is-8 is-offset-2">
+      <figure class="image is-16by9">
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+      </figure>
+    </div>
+  </div>
+  <section class="section">
+    <div class="columns">
+      <div class="column is-8 is-offset-2">
+        <div class="content is-medium">
+          <h2 class="subtitle is-4">{{ post.date }}</h2>
+          <h1 class="title">{{ post.title }}</h1>
+          <p>{{post.content| truncatewords: 20 }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  {% endfor %}
 </div>
+</section>
