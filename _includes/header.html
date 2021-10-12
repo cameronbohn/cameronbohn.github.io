@@ -13,13 +13,13 @@
         </div>
         <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item is-active">
+                <a class="navbar-item {% if page.url == '/' %}is-active{% endif %}">
                         Home
                     </a>
                 <a class="navbar-item">
                         Photography
                     </a>
-                <a href="/travels/" class="navbar-item">
+                <a href="/travels/" class="navbar-item {% if page.url contains 'travels' %}is-active{% endif %}">
                         Travels
                     </a>
                 <a class="navbar-item">

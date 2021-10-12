@@ -17,9 +17,10 @@ description: "hello"
     <div class="columns">
       <div class="column is-8 is-offset-2">
         <div class="content is-medium">
-          <h2 class="subtitle is-4">{{ post.date }}</h2>
+          <h2 class="subtitle is-4">{{ post.date | date: "%b %d, %Y" }}</h2>
           <h1 class="title">{{ post.title }}</h1>
-          <p>{{post.content| truncatewords: 20 }}</p>
+          <p>{{post.content| truncatewords: 60 }}</p>
+          <p><a href="{{ post.url }}">Continue Reading</a></p>
         </div>
       </div>
     </div>
